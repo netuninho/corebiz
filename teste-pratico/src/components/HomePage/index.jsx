@@ -63,6 +63,7 @@ export default function HomePage() {
         <h2>Participe de nossas news com promoções e novidades!</h2>
 
         <div className="contact-form">
+        {formik.errors.name && <span>{formik.errors.name}</span>}
           <input
             id="name"
             type="text"
@@ -70,6 +71,7 @@ export default function HomePage() {
             onChange={formik.handleChange}
             placeholder="Digite seu nome"
           />
+          {formik.errors.email && <span>{formik.errors.email}</span>}
           <input
             id="email"
             type="email"
