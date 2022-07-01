@@ -23,6 +23,8 @@
 }
 
 .contact button{
+    display: flex;
+    gap: 10px;
     background-color: #FFFF;
     border: none;
     border-radius: 5px;
@@ -31,7 +33,7 @@
     font-weight: 600;
 }
 
-.logo{
+.footer-logo{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -48,4 +50,17 @@
 .vtex-logo{
     width: 55px;
     height: 30px;
+}
+
+@media (max-width: 320px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-logo{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20px;
+    }
 }

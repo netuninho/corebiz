@@ -1,23 +1,70 @@
 header .container{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin: 0 auto;
+    max-width: 100%;
 }
 
-header div .menu{
+.menu{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     gap: 50px;
-    align-items: center;
+    padding: 16px 0;
 }
 
-header div .search-area{
+.search-bar {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    width: 60%;
-    padding-right: 12px;
-    border: none;
+    justify-content: space-between;
+    border-bottom: 2px solid #7A7A7A;
+    padding-bottom: 4px;
+    width: 50%;
+}
+
+.search{
     outline: none;
+    border: none;
+    resize: none;
+    width: 100%;
+}
+
+.account{
+    font-size: 13px;
+    color: #7A7A7A;
+}
+
+.cart{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.counter{
+    width: 14px;
+    height: 14px;
+    background-color: #F8475F;
+    border-radius: 50%;
+    font-size: 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+}
+
+.menu-mobile{
+    display: flex;
+    gap: 25px;
+}
+
+@media (max-width: 320px){
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search-bar{
+        width: 90%;
+    }
+
+    .menu-mobile{
+        display: flex;
+        gap: 50px;
+    }
 }

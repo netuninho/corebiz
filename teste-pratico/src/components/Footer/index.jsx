@@ -1,5 +1,7 @@
 import React from 'react'
 import line from '../../assets/line2.png'
+import message from '../../assets/message.svg';
+import callcenter from '../../assets/callcenter.svg';
 import corebiz from '../../assets/corebiz.png';
 import vtex from '../../assets/vtex.png';
 import './styles.css';
@@ -19,10 +21,16 @@ export default function Footer() {
         </div>
 
         <div className='contact'>
-          <button>ENTRE EM CONTATO</button>
-          <button>FALE COM O NOSSO <br/> CONSULTOR ONLINE</button>
+          <button>
+            <img src={message}/>
+            ENTRE EM CONTATO
+          </button>
+          <button>
+            <img src={callcenter}/>
+            FALE COM O NOSSO <br/> CONSULTOR ONLINE
+          </button>
         </div>
-        <div className='logo'>
+        <div className='footer-logo'>
           <img className='corebiz-logo' src={corebiz}/>
           <img className='vtex-logo' src={vtex}/>
         </div>

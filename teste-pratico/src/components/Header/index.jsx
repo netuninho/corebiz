@@ -5,18 +5,25 @@ import cart from '../../assets/cart.svg';
 import search from '../../assets/search.svg';
 import './styles.css';
 
-export default function Header() {
+export default function Header(props) {
   return (
     <header className='container'>
         <div className='menu'>
 
-          <img className='logo' src={logo} alt="Corebiz"></img>
+          <img className='header-logo' src={logo} alt="Corebiz"></img>
           
-          {/* <textarea className='search'>O que está procurando?</textarea> */}
-          <img className='icon-search' src={search}/>
-
-          <a><img src={profile} alt="Minha Conta"/> Minha conta</a>
-          <img src={cart}/>
+          <div className='search-bar'>
+            <input type='search' className='search' placeholder='O que está procurando?'></input>
+            <img className='icon-search' src={search}/>
+          </div>
+          
+          <div className='menu-mobile'>
+            <a className='account'><img src={profile} alt="Minha Conta"/> Minha conta</a>
+            <div className='cart'>
+              <img src={cart}/>
+              <span className='counter'>{props.number}</span>
+            </div>  
+          </div>
         </div>
     </header>
   )

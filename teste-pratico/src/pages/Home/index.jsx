@@ -6,7 +6,7 @@ import Footer from '../../components/Footer';
 export default function Home() {
   return (
     <>
-      <Header></Header>
+      <Header number={localStorage.getItem('contador')}></Header>
       <HomePage></HomePage>
       <Footer></Footer>
     </>

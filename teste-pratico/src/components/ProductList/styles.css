@@ -1,0 +1,29 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:  #7A7A7A;
+}
+
+.product button {
+    border: none;
+    background-color: #000;
+    color: #FFFF;
+    border-radius: 5px;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.product p {
+    color: #000;
+    font-weight: 700;
+}
+
+@media (max-width: 320px){
+    .product{
+        display: flex;
+        flex-direction: column;
+    }
+}

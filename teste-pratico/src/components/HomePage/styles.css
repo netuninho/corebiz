@@ -61,3 +61,27 @@ div .banner-container{
     margin-top: 10px;
     font-size: 14px;
 }
+
+@media (max-width: 320px){
+    .banner-container{
+        background-image: url("../../assets/banner-mobile.png");
+    }
+
+    .banner-text{
+        padding-top: 50%;
+    }
+
+    .product-nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .arrow{
+        display: none;
+    }
+
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+    }
+}
